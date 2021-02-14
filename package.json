@@ -1,0 +1,21 @@
+{
+  "name": "vuestore01n",
+  "version": "1.0.0",
+  "description": "MEVN Store (backend)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Victor Malukhin <victor.malukhin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "mongoose": "^5.11.16",
+    "nodemon": "^2.0.7",
+    "qs": "^6.9.6",
+    "ramda": "^0.27.1"
+  }
+}
