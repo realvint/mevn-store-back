@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const http = require('http')
+const cors = require('cors')
 const {routes} = require('./src/routes')
 
 // initial DB
@@ -16,6 +17,7 @@ mongoose.connect(
 
 // initial app
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
